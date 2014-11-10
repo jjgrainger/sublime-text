@@ -1,11 +1,13 @@
 {
     "theme": "Spacegray.sublime-theme",
     "color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
-    "font_face": "Source Code Pro",
+    "font_face": "Menlo",
     "font_size": 12,
     "line_padding_bottom": 8,
     "tab_size": 4,
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
     "word_wrap": false,
+    "ensure_newline_at_eof_on_save": true,
+    "drag_text": false
 }

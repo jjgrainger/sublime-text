@@ -3,5 +3,6 @@
     "gutter": true,
     "line_numbers": true,
     "scroll_past_end": false,
-    "draw_centered": false
+    "draw_centered": false,
+    "ruler": false
 }
