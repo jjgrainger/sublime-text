@@ -1,0 +1,13 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"DocBlockr",
+		"Emmet",
+		"Package Control",
+		"PhpDoc",
+		"Theme - Spacegray"
+	]
+}
