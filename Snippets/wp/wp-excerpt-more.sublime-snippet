@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+// set excerpt more text
+function ${1:new_excerpt_more}(\$more) {
+    return ${2:'&hellip;'};
+}
+
+add_filter('excerpt_more', '${1:new_excerpt_more}');
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>wp-excerpt-more</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+</snippet>
