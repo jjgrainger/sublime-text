@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+
+$('.slides').cycle({
+    'slides' : '.slide',
+    'pager' : '.pager',
+    'pagerTemplate' : "<span class='pager-item'></span>",
+    'pauseOnHover' : false,
+    'swipe' : true
+});
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>js-cycle</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

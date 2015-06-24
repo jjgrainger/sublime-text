@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+/*
+Theme Name: ${1:Theme Name}
+Theme URI: ${2:Theme URI}
+Description: Designed by Venn Creative
+Version: 1.0
+Author: Venn Creative
+Author URI: http://venncreative.co.uk
+License: GPL
+*/
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>wp-style</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.css</scope> -->
+</snippet>
