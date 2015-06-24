@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+\$${1:q} = new WP_Query(array(${2}));
+
+if(\$${1:q}->have_posts()) : while(\$${1:q}->have_posts()) : \$${1:q}->the_post();
+
+endwhile; endif;
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>wp-q</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.php</scope> -->
+</snippet>

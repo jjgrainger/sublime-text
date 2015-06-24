@@ -1,0 +1,67 @@
+<snippet>
+    <content><![CDATA[
+
+add_action('after_setup_theme', 'venn_theme_setup' );
+
+function venn_theme_setup() {
+
+    //Set up theme support
+    if(function_exists('add_theme_support')) {
+
+        //Add Thumbnail Support
+        add_theme_support('post-thumbnails');
+
+        //additional Image Sizes
+        if(function_exists('add_image_size')) {
+            //add_image_size('name', width, height, crop);
+
+        }//end if(function_exists('add_image_size'))
+
+        //Add Menus
+        add_theme_support('nav-menus');
+        add_action('init', 'register_theme_menus');
+
+        //Register Theme Menus
+        function register_theme_menus() {
+
+            register_nav_menus(
+                array(
+                    'main-menu' => __('Main Menu'),
+                    'footer-menu' => __('Footer Menu')
+                )
+            );
+
+        }//end register_my_menus()
+
+
+        //Register Sidebars
+        if(function_exists('register_sidebar')) {
+
+            //Sidebar Properties
+            $sidebar = array(
+                'name' => __('Blog Sidebar'),
+                'id' => 'blog-sidebar',
+                'before_widget' => '<div class="widget">',
+                'after_widget' => '</div>',
+                'before_title' => '<h6 class="widget-title">',
+                'after_title' => '</h6>',
+            );
+
+            //Register Sidebar
+            register_sidebar($sidebar);
+
+        }//end if(function_exists('register_sidebar'))
+
+    }//end if(function_exists('add_theme_support'))
+
+    // add editor styles
+    // add_editor_style('editor-styles.css');
+
+}//end venn_theme_setup()
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>wp-theme-setup</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+</snippet>
